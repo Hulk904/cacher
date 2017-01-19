@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Date;
+
 /**
  * Created by yangyuan on 16-5-26.
  */
@@ -20,7 +22,8 @@ public class TestService {
 
     @Test
     public void getHotelExpand(){
+        System.out.println(System.currentTimeMillis());
         HotelExtendInfo hotelExtendInfo = hotelExtendService.getHotelExtendInfoById(1115301);
-        System.out.println("==");
+        System.out.println(System.currentTimeMillis());
     }
 }
